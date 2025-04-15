@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Radio Button Background Change</title>
+</head>
+<body>
+  <h1><center>CHOOSE THE COLOR:</center></h1><br><br>
+  <center>
+  <input type="radio" id="#EE4B50" name="color" value="#EE4B50"> Red  
+  <input type="radio" id="#6DEE4B" name="color" value="#6DEE4B"> Green  
+  <input type="radio" id="#4B92EE" name="color" value="#4B92EE"> Blue
+  <input type="radio" id="#F0FF33" name="color" value="#F0FF33"> Yellow  
+  <input type="radio" id="#848784" name="color" value="#848784"> Grey
+  </center>
+
+  <script>
+    // Get all radio buttons
+    const redRadio = document.getElementById('#EE4B50');
+    const greenRadio = document.getElementById('#6DEE4B');
+    const blueRadio = document.getElementById('#4B92EE');
+    const yellowRadio = document.getElementById('#F0FF33');
+    const greyRadio = document.getElementById('#848784');
+
+    redRadio.addEventListener('change', function() {
+      if (this.checked) {
+        document.body.style.backgroundColor = '#EE4B50';
+      }
+    });
+
+    greenRadio.addEventListener('change', function() {
+      if (this.checked) {
+        document.body.style.backgroundColor = '#6DEE4B';
+      }
+    });
+
+    blueRadio.addEventListener('change', function() {
+      if (this.checked) {
+        document.body.style.backgroundColor = '#4B92EE';
+      }
+    });
+    yellowRadio.addEventListener('change', function() {
+      if (this.checked) {
+        document.body.style.backgroundColor = '#F0FF33';
+      }
+    });
+    greyRadio.addEventListener('change', function() {
+      if (this.checked) {
+        document.body.style.backgroundColor = '#848784';
+      }
+    });
+  </script>
+
+</body>
+</html>
+
